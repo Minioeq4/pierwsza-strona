@@ -1,11 +1,10 @@
-/* Resetowanie marginesów i paddingu */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Podstawowe style dla body */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -18,7 +17,7 @@ h1 {
     margin-right: auto;
 }
 
-/* Nagłówek */
+
 header {
     background-color: #333;
     color: white;
@@ -30,7 +29,7 @@ header h1 {
     margin: 0;
 }
 
-/* Menu nawigacyjne */
+
 nav {
     background-color: #444;
     text-align: center;
@@ -49,13 +48,13 @@ nav a:hover {
     background-color: #555;
 }
 
-/* Sekcja główna */
+
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Sekcja "O mnie" */
+
 .about-section {
     display: flex;
     flex-direction: column;
@@ -97,7 +96,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* Sekcja projektów */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -141,7 +140,7 @@ main {
     text-decoration: underline;
 }
 
-/* Formularz kontaktowy */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -187,7 +186,7 @@ main {
     background-color: #0056b3;
 }
 
-/* Stopka */
+
 footer {
     background-color: #313030;
     color: white;
@@ -198,9 +197,9 @@ footer {
     bottom: 0;
 }
 
-/* Responsywność */
 
-/* Sekcja "O mnie" */
+
+
 @media (min-width: 768px) {
     .about-section {
         flex-direction: row;
@@ -219,15 +218,15 @@ footer {
     }
 }
 
-/* Siatka projektów */
+
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
-        /* 1 kolumna na urządzenia mobilne */
+
     }
 }
 
-/* Styl formularza na urządzeniach mobilnych */
+
 @media (max-width: 768px) {
     .contact-form {
         margin-left: 20px;
