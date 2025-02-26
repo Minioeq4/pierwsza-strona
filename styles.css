@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    text-align: center;
 }
 
 h1 {
@@ -29,6 +28,35 @@ header h1 {
     margin: 0;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
 
 nav {
     background-color: #444;
@@ -48,10 +76,20 @@ nav a:hover {
     background-color: #555;
 }
 
-
 main {
     padding: 20px;
     text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.responsive-container {
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
@@ -67,6 +105,12 @@ main {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+}
+
+.photo img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 .about-content {
@@ -94,6 +138,16 @@ main {
     font-size: 1.2em;
     color: #444;
     margin-bottom: 10px;
+}
+
+.interests,
+.skills {
+    margin-top: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 
@@ -152,16 +206,26 @@ main {
     margin-right: auto;
 }
 
-.contact-form form {
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
 }
 
 .contact-form label {
     font-size: 1.1em;
     color: #333;
+    margin-bottom: 5px;
 }
 
 .contact-form input,
@@ -188,7 +252,7 @@ main {
 
 
 footer {
-    background-color: #313030;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
@@ -197,7 +261,10 @@ footer {
     bottom: 0;
 }
 
-
+.responsive-container {
+    margin: 0 auto;
+    padding: 20px;
+}
 
 
 @media (min-width: 768px) {
@@ -218,18 +285,35 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+    .responsive-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .responsive-container {
+        width: 80%;
+    }
+}
 
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
-
     }
-}
 
-
-@media (max-width: 768px) {
     .contact-form {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .responsive-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-container {
+        width: 95%;
     }
 }
